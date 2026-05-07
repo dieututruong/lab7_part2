@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -91,15 +92,20 @@
               type="checkbox"
               name="accom"
               id="accom"
-              value="Accomodation"
+              value="Accommodation"
             /><br />
-            <label for="4day">4 Day Tour</label>
-            <input type="checkbox" name="4day" id="4day" value="4day" /><br />
-            <label for="10day">10 Day Tour</label>
+            <label for="tour4day">4 Day Tour</label>
+            <input
+              type="checkbox"
+              name="4day"
+              id="tour4day"
+              value="4day"
+            /><br />
+            <label for="tour10day">10 Day Tour</label>
             <input
               type="checkbox"
               name="10day"
-              id="10day"
+              id="tour10day"
               value="10day"
             /><br />
           </fieldset>
@@ -115,13 +121,14 @@
           </p>
           <p>
             <!-- Firefox does not support the HTML5 date input yet so we need to use text -->
-            <label for="date">Date</label>
+            <label for="bookday">Date (dd/mm/yyyy)</label>
             <input
               type="text"
-              id="date"
+              id="bookday"
               name="bookday"
               maxlength="10"
               size="10"
+              placeholder="dd/mm/yyyy"
             />
           </p>
           <p>
