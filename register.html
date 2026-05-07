@@ -1,15 +1,11 @@
-
 <!doctype html>
 <html lang="en">
   <head>
     <title>Rohirrim Booking</title>
-    <meta charset="utf-8" />
-    <meta name="description" content="Rohirrim Booking Form" />
-    <meta name="keywords" content="MiddleEarth, Tours, Rohan" />
-    <meta name="author" content="Grima Wormtongue" />
+    <meta charset="utf-8">
     <!-- Place the general style sheet before specific CSS so the specific overides the general formatting-->
-    <link rel="stylesheet" type="text/css" href="style/style.css" />
-    <link rel="stylesheet" type="text/css" href="style/register.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/register.css">
   </head>
 
   <body>
@@ -25,26 +21,22 @@
     </nav>
 
     <article>
-      <form
-        id="regform"
-        action="processbooking.php"
-        method="post"
-        novalidate="novalidate"
-      >
+      <h2>Book your trip to Rohan!</h2>
+      <form id="regform" action="processbooking.php" method="post" novalidate="novalidate">
         <fieldset id="person">
           <legend>Your details:</legend>
           <p>
             <label for="firstname">Enter your Firstname</label>
-            <input type="text" name="firstname" id="firstname" size="20" />
+            <input type="text" name="firstname" id="firstname" size="20">
           </p>
           <p>
             <label for="lastname">Enter your Lastname</label>
-            <input type="text" name="lastname" id="lastname" size="20" />
+            <input type="text" name="lastname" id="lastname" size="20">
           </p>
 
           <p>
             <label for="age">Enter your Age</label>
-            <input type="text" name="age" id="age" />
+            <input type="text" name="age" id="age">
           </p>
           <fieldset>
             <legend>Species:</legend>
@@ -56,7 +48,7 @@
               class="chkbox"
               value="M"
               checked="checked"
-            /><br />
+            ><br>
             <label for="dwarf">Dwarf</label>
             <input
               type="radio"
@@ -64,7 +56,7 @@
               id="dwarf"
               class="chkbox"
               value="D"
-            /><br />
+            ><br>
             <label for="elf">Elf</label>
             <input
               type="radio"
@@ -72,7 +64,7 @@
               id="elf"
               class="chkbox"
               value="E"
-            /><br />
+            ><br>
             <label for="hobbit">Hobbit</label>
             <input
               type="radio"
@@ -80,7 +72,7 @@
               id="hobbit"
               class="chkbox"
               value="H"
-            /><br />
+            ><br>
           </fieldset>
         </fieldset>
         <fieldset id="trip">
@@ -93,21 +85,21 @@
               name="accom"
               id="accom"
               value="Accommodation"
-            /><br />
+            ><br>
             <label for="tour4day">4 Day Tour</label>
             <input
               type="checkbox"
               name="4day"
               id="tour4day"
               value="4day"
-            /><br />
+            ><br>
             <label for="tour10day">10 Day Tour</label>
             <input
               type="checkbox"
               name="10day"
               id="tour10day"
               value="10day"
-            /><br />
+            ><br>
           </fieldset>
           <p>
             <label for="food">Menu preferences</label>
@@ -121,25 +113,25 @@
           </p>
           <p>
             <!-- Firefox does not support the HTML5 date input yet so we need to use text -->
-            <label for="bookday">Date (dd/mm/yyyy)</label>
-            <input
+            <label> for="bookday">Date (dd/mm/yyyy)</label>
+            <input>
               type="text"
               id="bookday"
               name="bookday"
               maxlength="10"
               size="10"
               placeholder="dd/mm/yyyy"
-            />
+            
           </p>
           <p>
             <label for="partysize">Number of travellers:</label>
-            <input type="text" id="partysize" name="partysize" />
+            <input type="text" id="partysize" name="partysize" >
           </p>
         </fieldset>
         <div id="bottom"></div>
         <p>
-          <input type="submit" value="Book Now!" />
-          <input type="reset" value="Reset" />
+          <input type="submit" value="Book Now!" >
+          <input type="reset" value="Reset">
         </p>
       </form>
     </article>
